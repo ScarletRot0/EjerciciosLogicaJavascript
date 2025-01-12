@@ -24,3 +24,7 @@ function flippingMatrix(matrix) {
 //  d.matrix[2n−i−1][2n−j−1] (el valor tras invertir fila y columna).
 //2.Por lo tanto, para maximizar el valor en esa posición, simplemente tomamos el máximo de esos 4 valores.
 //3.Hacemos esto para cada celda en el cuadrante superior izquierdo.
+//Aunque iteramos sobre el cuadrante superior izquierdo para elegir las posiciones de inicio (i,j) , 
+//la lógica del algoritmo también considera los valores fuera de ese cuadrante al evaluar las inversiones posibles (inversiones de filas y columnas).
+//El acceso a valores como los de la columna 7 se debe a que estamos simulando las inversiones de filas y columnas posibles en el resto de la matriz. 
+//Esto se hace para maximizar el valor en cada celda (i,j) del cuadrante superior izquierdo.
